@@ -16,16 +16,62 @@
 				</div>
 				<div class="main-navigation">
 					<ul>
-						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Каталог</a>
+							<ul>
+								<li><a href="#"><b>Новинки</b></a></li>
+								<li><a href="#">Сливочное</a></li>
+								<li><a href="#">Щербеты</a></li>
+								<li><a href="#">Фруктовый лед</a></li>
+								<li><a href="#">Мелорин</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Доставка и оплата</a></li>
 						<li><a href="#">О Компании</a></li>
 					</ul>
 				</div>
 				<div class="header-right">
 					<ul>
-						<li><a href="">Поиск</a></li>
-						<li><a href="">Вход</a></li>
-						<li><a href="">Корзина</a></li>
+						<li><a href="#">Поиск </a>
+						<!-- Я думаю, что при клике должна появиться форма, не пойму, как привязать форму к ссылке?.Не знаю, как отправим запрос? -->
+							<form action="#" method="get">
+  								<input type="text" name="search" id="search" value="Что ищем?">
+							</form>
+						</li>
+						<li><a href="#">Вход</a>
+						<!-- тоже через клик по Вход, появляется форма -->
+							<form action="#" method="get">
+  								<input type="email" name="email-address" id="address" value="Электронный адрес">
+  								<input type="password" name="password" id="password" value="Пароль">
+  								<a href="#">Войти</a>
+  								<ul>
+  									<li><a href="#">Забыли пороль?</a></li>
+  									<li><a href="#">Новая регистрация</a>
+  										<form action="#" method="get">
+  											<input type="text" name="name" id="name" value="Как вас зовут?">
+										</form>
+  									</li>
+  								</ul>
+
+							</form>
+						</li>
+						<li><a href="">Корзина</a>
+							<ul>
+								<li><img src="http://placehold.it/150x100" alt="Пломбир с апельсиновым джемом"></li>
+								<li>Пломбир с апельсиновым джемом</li>
+								<li>1,5кг. &#10006; 200 руб.</li>
+								<li>300 руб.</li>
+								
+							</ul>
+							<ul>
+								<li><img src="http://placehold.it/150x100" alt="Клубничный пломбир с присыпкой из белого шоколада"></li>
+								<li>Клубничный пломбир с присыпкой из белого шоколада</li>
+								<li>1,5кг. &#10006; 300 руб.</li>
+								<li>450 руб.</li>
+								
+							</ul>
+							<p>Итого:750 руб.</p>
+							<a href="#">Оформить заказ</a>
+						</li>
 					</ul>
 					
 				</div>
