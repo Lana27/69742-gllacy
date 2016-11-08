@@ -9,8 +9,9 @@
 <body>
 <!-- begin header -->
 	<header>
-		<div class="main-header">
+		
 			<div class="container clearfix">
+			<div class="main-container">
 				<div class="logo">
 					<img src="img/Logo.png" alt="GllacyShop">
 				</div>
@@ -95,18 +96,38 @@
 
 <!--begin main -->
 <div class="container clearfix">	
-	<div class="slaider">
-	
-		<h2>Крем&ndash;брюле и пломбир<br> с малиновым джемом</h2>
-		<a href="#">Давайте оба!</a>
-		<ul>
-			<li><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-		</ul>
+	<div class="slider">
+		 <div class="slider-controls"></div>
+		 <div class="slider-inner">
+		 
+		  
+                    <div class="slider-slides">
+                        <img src="img/creamy-slide.png" width="900px" height="auto" alt="Мороженое ">
+                        <img src="img/creamy-slide.png"  width="900px" height="auto" alt="Сливочное с апельсиновым джемом">
+                        <img src="img/creamy-slide.png" width="900px" height="auto" alt="Клубничное с присыпкой из белого шоколада">
+                    </div>
+                      
+            </div>
+            <!-- ------------------------ -->
+		
+
+
+				<input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
+                <input type="radio" id="btn-3" name="toggle">
+                
+                <div class="slider-controls">
+                    
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
+                    
+                </div>
+                <h2>Крем&ndash;брюле и пломбир<br> с малиновым джемом</h2>
+				<div class="btn-both"><a href="#">Давайте оба!</a></div>
 		
 	</div>
-	<section class="clearfix">
+	<section class="cream clearfix">
 		<div class="raspberry gift">
 			<h3>Малинка даром!</h3>
 			<p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -115,62 +136,87 @@
 		<div class="chocolate gift">
 			<h3>Шоколадки даром!</h3>
 			<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно</p>
-			<a href="#">Хочу варенье</a>
+			<a href="#">Хочу шоколадки!</a>
 		</div>
 	</section>
+
 	<section class="range clearfix">
 		<div class="ice-creamy">
 			<p>310 &#8381;/кг</p>
-			
-			<img src="img/creamy-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="170px" height="170px">
+			<div class="hit-1"></div>
+			<img src="img/creamy-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="200px" height="200px">
 			<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 		</div>
 		<div class="ice-creamy">
 			<p>380 &#8381;/кг</p>
-			
-			<img src="img/creamy-2.png" alt="Сливочно&ndash;кофейное с кусочками шоколада" width="170px" height="170px">
+			<div class="hit-1"></div>
+			<img src="img/creamy-2.png" alt="Сливочно&ndash;кофейное с кусочками шоколада" width="200px" height="200px">
 			<a href="#">Сливочно&ndash;кофейное с кусочками шоколада</a>
 		</div>
 		<div class="ice-creamy">
 			<p>366 &#8381;/кг</p>
-			
-			<img src="img/creamy-3.png" alt="Сливочно&ndash;клубничное с присыпкой из белого шоколада" width="170px" height="170px">
+			<div class="hit-1"></div>
+			<img src="img/creamy-3.png" alt="Сливочно&ndash;клубничное с присыпкой из белого шоколада" width="200px" height="200px">
 			<a href="#">Сливочно&ndash;клубничное с присыпкой из белого шоколада</a>
 		</div>
 		<div class="ice-creamy">
 			<p>415 &#8381;/кг</p>
-			
-			<img src="img/creamy-4.png" alt="Сливочное крем&ndash;брюле с карамельной подливкой" width="170px" height="170px">
+			<div class="hit-1"></div>
+			<img src="img/creamy-4.png" alt="Сливочное крем&ndash;брюле с карамельной подливкой" width="200px" height="200px">
 			<a href="#">Сливочное крем&ndash;брюле с карамельной подливкой</a>
 		</div>
 	</section>
 	<section class="info-shop clearfix">
 		<span>Магазин Глейси&ndash;это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</span>
-		<p class="info equipment">Все мороженое изготавливается на собственном производстве, с использованием современного оборудования и провененных временем технологий</p>
-		<p class="info ingredients">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-		<p class="info purchase">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-		<p class="info shipping">Доставка нашего мороженого до заказчиков осуществляется в специальном пермопакете, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+		
+			<div class="info equipment">
+				<div class="icon-equipment"></div>
+				<p>Все мороженое изготавливается на собственном производстве, с использованием современного оборудования и провененных временем технологий</p>
+			</div>
+			<div class="info purchase">
+				<div class="icon-purchase"></div>
+				<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+			</div>
+		
+
+			<div class="info ingredients">
+				<div class="icon-ingredients"></div>
+				<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+			</div>
+			<div class="info shipping">
+				<div class="icon-shipping"></div>
+				<p>Доставка нашего мороженого до заказчиков осуществляется в специальном пермопакете, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+			</div>
+	
 	</section>
+	
+	<div class="main-container">
+
+
 	<div class="news clearfix">
-		<div class="serving">
+		<div class="serving gift">
 			<p>Новое в нашем блоге</p>
-			<a href="">10 способов сервировки фруктовых щербетов к столу</a>
+			<a href="">10 способов сервировки фруктовых щербетов к<br> столу</a>
 		</div>
-		<div class="subscribe">
-			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно.</p>
-			<form action="">
-				<input type="email"><button class="btnform" type="submit">Отправить</button>
-			</form>
+		<div class="subscribe gift">
+			<div class="subscribe-bg">
+				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно.</p>
+				<form action="" >
+					<input type="email"><button class="btnform" type="submit">Отправить</button>
+				</form>
+			</div>
 		</div>
 	</div>
+	</div>
 	<div class="map">
+		<div class="icon-map"></div>
 		<div class="address">
-			<p>Адрес главного офиса и офлайн магазина:</p>
+			<p>Адрес главного офиса и<br>офлайн магазина:</p>
 			<span>ул. Большая Конюшенная 19/8, Санкт&ndash;Петербург</span>
 			<p>Для заказов по телефону:</p>
 			<span>8&nbsp;812&nbsp;450&ndash;25&ndash;25</span>
 			<p>(с 10 до 20 ежедневно)</p>
-			<a href="#">Форма обратной связи</a>
+			<a href="#" class="btn-map">Форма обратной связи</a>
 			
 		</div>
 	</div>
@@ -184,12 +230,12 @@
 			<div class="so-cial">
 				<ul>
 					<li><a href="#" class="social social-tw"></a></li>
-					<li><a href="#" class="social social-it">Инстограм</a></li>
-					<li><a href="#" class="social social-fb">Фэйсбук</a></li>
-					<li><a href="#" class="social social-vk">В контакте</a></li>
+					<li><a href="#" class="social social-it"></a></li>
+					<li><a href="#" class="social social-fb"></a></li>
+					<li><a href="#" class="social social-vk"></a></li>
 				</ul>
 			</div>
-			<div class="info">
+			<div class="info-footer">
 				<ul class="info-1">
 					<li><b>&#10084;</b><a href="">Для поставщиков</a></li>
 					<li class="under-heart"><a href="">О производстве</a></li>

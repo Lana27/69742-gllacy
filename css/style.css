@@ -1,10 +1,12 @@
 body{
 	font-size: 16px;
-	line-height: ;
+	line-height: 22px;
 	color: #323232;
 	font-weight: normal;
 	font-family: Roboto, sans-serif;
 	background-color: #849d8f;
+	margin: 0px;
+	padding: 0px;
 }
 .clearfix::after{
 	content:"";
@@ -29,17 +31,30 @@ h1{
 }
 h2{
 	font-size: 60px;
-	line-height: ;
+	line-height:60px ;
+	color: #fff;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
+}
+h3{
+	margin: 0px;
+	padding: 0px;
+	font-size: 35px;
+	line-height:41px ;
 	color: #fff;
 	font-weight: bold;
 	font-family: Roboto, sans-serif;
 }
 
 
+.main-container{
+	padding: 0px 20px;
+}
 .container {
     width: 900px;
     margin: 0px auto;
     border: 1px solid red;
+    position:relative;
     }
 /*---header begin---------------------------*/
 .logo{
@@ -48,13 +63,13 @@ h2{
 }
 /*---main-navigation begin--------------*/
 .main-navigation{
-	width: 400px;
+	width: 410px;
 	float: left;
 }
 
 .main-menu{
 	margin: 0;
-    padding: 0px 12px;
+    padding-left: 30px;
     list-style: none;
     border: 1px solid #e5e5e5;
 }
@@ -62,31 +77,47 @@ h2{
 	position: relative;
 	display: inline-block;
 }
-.main-menu>li>a{
+.main-menu>li>a {
     display: block;
     margin-left: -1px;
-    padding: 8px 10px;
-    color: #fff;
-   
+    padding: 10px 10px;
+    margin-top: 10px;
+    font-size: 16px;
+	
+	color: #fff;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
 }
 .main-menu>li:hover a {
-    background: #f5f5f5;
+	color: #333333;
+	border-radius: 50px;
+    background:#fff;
 }
 .sub-menu {
 	display: none;
     position: absolute;
+    top:55px;
     left: -5px;
-    width: 80px;
+    width:150px;
+    
     margin: 0;
     padding: 10px;
-    background: #fcf8e3;
+    background: #fff;
+	border-radius: 4px; 
 }
 .sub-menu a{
-	color: red;
-	margin-bottom:-1px ;
-}
+	font-size: 14px;
+	color: #333333;
+	line-height:16px;
+	text-decoration: none;
+	margin-top:5px;
+} 
+	
 .main-menu>li:hover .sub-menu{
 	display: block;
+}
+.main-menu>li>.sub-menu:hover a{
+	background:fbded7;
 }
 /*---main-navigation end------------*/
 
@@ -147,7 +178,10 @@ h2{
 }
 /*----header-right end-----------------*/
 .time-phone{
-	float: right;
+	
+	position: absolute;
+	top:65px;
+	right: 10px;
 }
 .time{
 	margin: 0px;
@@ -156,56 +190,468 @@ h2{
 /*------header end------------------*/
 
 /*-------slaider begin--------------*/
-.slaider ul>li{
-	display: inline-block;
-	width: 20px;?????????????????????????????
-	height: 20px;
+.slider {
+	position: relative;
+	text-align:center;
+}
+.slider input[type=radio] {
+    display: none;
+}
+.slider-slides{
+	width: 300%;
+}
+.slider-inner{
 	
+	overflow: hidden;
 }
-.slaider ul>li>a{
+
+.slider-slides img{
+	
+	float: left;
+}
+.slider-controls {
+	position: absolute;
+	top:485px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 20px;
+}
+.slider-controls label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border:2px solid #fff;
+    border-radius: 50%;
+    
+    margin-right: 6px;
+    cursor: pointer;
+    background-color: #8ca698;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+ #btn-2:checked ~ .slider-controls label[for="btn-2"],
+ #btn-3:checked ~ .slider-controls label[for="btn-3"]{ 
+    background-color: #FFF;
+}
+/*-------------------------то, что ниже не срабатывает-*/
+#btn-1:checked ~ .slider-inner .slider-slides{
+    -webkit-transform: translate(0px);
+       -moz-transform: translate(0px);
+        -ms-transform: translate(0px);
+         -o-transform: translate(0px);
+            transform: translate(0px);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+    -webkit-transform: translate(100px);
+       -moz-transform: translate(100px);
+        -ms-transform: translate(100px);
+         -o-transform: translate(100px);
+            transform: translate(100px)
+}
+
+#btn-3:checked ~ .slider-inner .slider-slides {
+    transform: translate(-900px);
+}
+/*---------------------------*/
+.slider h2{
+	position: absolute;
+	top: 310px;
+	left: 115px;
+	letter-spacing:-2px;
+	margin: 0px;
+	padding: 0px;
+}
+.btn-both{
+	position: absolute;
+	top:470px;
+	left:310px;
+	
+	border: 1px solid #f26843;
+	border-radius:50px;
+	padding: 4px 35px;
+	background:#ed5a3d; 
+	box-shadow: 2px 0px 5px #a0200b;       
+}
+.btn-both a{
+	font-size: 32px;
+	line-height:44px;
+	color: #fff;
 	text-decoration: none;
-	border: 1px solid #fff;
-	border-radius: 50% 50%;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
 }
+
+
 
 /*-------slaider end----------------*/
 
-.raspberry {
+/*--------gift begin-----------------------*/
+.cream{
+	position:relative;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 42px;
+}
+
+.raspberry, .chocolate {
 	
 	float: left;
 }
-.gift{
-	width: 420px;
+.raspberry{
+	background-image: url("/C:/Users/Zaval/Desktop/Обучение верстка/69742-gllacy/img/raspberry.png");
+
 }
 .chocolate{
-	float: right;
+	background-image: url("/C:/Users/Zaval/Desktop/Обучение верстка/69742-gllacy/img/chocolate-bg.png");
+
+}
+.raspberry p, .chocolate p{
+	margin: 18px 0px 22px 0px;
+	font-size: 18px;
+	line-height:22px ;
+	color: #fff;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
+}
+.chocolate p{
+	margin-bottom: 0px;
+}
+.gift{
+	width: 386px;
+	margin: 0px;
+	padding: 15px;
+	border: 1px solid red;
+	border-radius:20px;
+	text-align: left;
+}
+.cream .gift:first-child{
+	margin-right: 23px;
+}
+.raspberry a{
+	display: inline-block;
+	position: relative;
+	left: 215px;
+	
+	border: 1px solid #f26843;
+	border-radius:50px;
+	padding: 8px 18px 10px 20px;
+	margin-bottom: 10px;
+	background:#ed5a3d; 
+	box-shadow: 2px 0px 5px #a0200b; 
+
+	font-size: 18px;
+	line-height:24px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
+}
+.chocolate a{
+	display: inline-block;
+	position: relative;
+	left: 191px;
+	
+	border: 1px solid #f26843;
+	border-radius:50px;
+	padding: 8px 18px 10px 20px;
+	margin-bottom: 10px;
+	background:#ed5a3d; 
+	box-shadow: 2px 0px 5px #a0200b; 
+
+	font-size: 18px;
+	line-height:24px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
+}
+
+/*---------gift end-------------------------------*/
+
+
+/*---range begin------*/
+.range{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 40px;
 }
 .ice-creamy{
 	float: left;
-	width: 220px;
+	position: relative;
+	width: 214px;
+	text-align: center;
 }
-.info-shop>p{
-	float: left;
-	width: 410px;
+.hit-1{
+	position: absolute;
+	left:0px;
+	width: 61px;
+	height:61px;
+	 border: 1px solid #fff;
+    border-radius:50px;
+    background-image: url("/C:/Users/Zaval/Desktop/Обучение верстка/69742-gllacy/img/hit.png");
 }
+.ice-creamy p{
+	position: absolute;
+	left:5px;
+	top:140px;
+	margin: 0px;
+	font-size: 45px;
+	line-height:45px ;
+	color: #fff;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
+}
+.ice-creamy a{
+  	font-size: 16px;
+	line-height:22px ;
+	color: #fff;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
+  }
+
+/*---range end--------*/
+/*---info-shop begin----------*/
+.info-shop{
+	margin: 0px 20px 40px;
+	padding-left: 20px;
+	border-radius:20px;
+	background-image: url("../img/info-bg.png");
+}
+.info{
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+	width: 380px;
+	margin-left: 50px;
+}
+.info-shop span{
+	display: inline-block;
+	padding: 23px 0px 20px;
+	letter-spacing:1px;
+	word-spacing:1px;
+	font-size: 24px;
+	line-height:30px;
+	color: #323232;
+	font-family: Roboto, sans-serif;
+}
+.info p{
+	margin: 0px;
+	padding-left: 5px;
+}		
+	
+.icon-equipment{
+	position: absolute;
+	left: -48px;
+	top: -13px;
+	width: 49px;
+	height:49px;
+	background:url("../img/result.png") no-repeat 0px -59px;
+
+}	
+.icon-purchase{
+	position: absolute;
+	left: -48px;
+	top: -13px;
+	width: 49px;
+	height:49px;
+	background:url("../img/result.png") no-repeat 0px -118px;
+}
+.icon-ingredients{
+	position: absolute;
+	left: -48px;
+	top: -13px;
+	width: 49px;
+	height:49px;
+	background:url("../img/result.png") no-repeat 0px 0px;
+}
+
+.icon-shipping{
+	position: absolute;
+	left: -48px;
+	top: -13px;
+	width: 49px;
+	height:49px;
+	background:url("../img/result.png") no-repeat 0px -177px;
+}
+
+    
+
+
+
+	
+	
+
+
+
+
+
+
+
+/*----info-shop end---------------*/
 .news{
 	clear: both;
+	margin-bottom: 40px;
 }
 .serving{
 	float: left;
-	width: 420px;
-}
-.subscribe{
-	float: right;
-	width: 420px;
-}
-.map{
-	width: 100%;
-	height: 100%;
-	
-	background: url(".../img/map.jpg");????????????????
+	padding-bottom: 80px;
+	background-image: url("../img/news.jpg");
+	background-repeat:no-repeat;
+
 }
 
+.serving p{
+	margin: 0px;
+	padding-top: 6px;
+	padding-bottom: 5px;
+	font-size: 16px;
+	line-height:22px ;
+	font-family: Roboto, sans-serif;
+}
+	
+	
+.serving a{
+	font-size: 24px;
+	line-height:30px ;
+	color: #353535;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
+	background-color: #FEFBFC;
+	opacity:0.8;
+}  
+.subscribe{
+	float: left;
+	margin-left: 23px;
+	background-image: url("../img/news-2bg.png");
+	background-repeat: no-repeat;
+	padding:3px !important; 
+	
+}
+
+ .subscribe-bg{
+	width: auto;
+	position: relative;
+	padding: 25px 0px 27px 20px;
+	border: 1px solid red;
+	border-radius:20px;
+	background-color:#fff;
+	text-align: left;
+}	
+.subscribe p{
+	padding-top: 5px;
+	padding-bottom:13px;
+	margin: 0px;
+	font-size: 16px;
+	line-height:22px ;
+	color: #353535;
+	font-weight: normal;
+	font-family: Roboto, sans-serif;
+		
+}
+.subscribe form{
+	margin-bottom: 30px;
+}
+.btnform{
+	position: absolute;
+	top: 132px;
+	left: 260px;
+	
+	border: 1px solid #f26843;
+	border-radius:50px;
+	padding: 4px 10px 10px 15px;
+	margin-right: 25px;
+	background:#ed5a3d; 
+	box-shadow: 2px 0px 5px #a0200b;
+	font-size: 18px;
+	line-height:24px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Roboto, sans-serif; 
+}
+.btnform a{
+
+}	
+	
+	
+
+
+
+
+/*----map begin------------------------------*/
+.map{
+	position: relative;
+	width: 100%;
+	min-height: 430px;
+	background-image: url("/C:/Users/Zaval/Desktop/Обучение верстка/69742-gllacy/img/map.jpg");
+	background-repeat: no-repeat;
+	background-position:-70px 0px;
+	
+}
+.icon-map{
+	width: 100%;
+	min-height: 430px;
+	background-image: url("/C:/Users/Zaval/Desktop/Обучение верстка/69742-gllacy/img/creamy-map.png");
+	background-repeat: no-repeat;
+	background-position: 190px 140px;
+}
+.address{
+	width: 280px;
+	position:absolute;
+	top:60px;
+	left: 577px;
+	padding-top: 30px;
+	padding-left: 24px;
+	background-color:#fff;
+	border-radius:15px;
+}
+.address p{
+	margin: 0px;
+	font-size: 14px;
+	line-height:20px ;
+	color: #323232;
+	font-weight: normal;
+	font-family: Roboto, sans-serif;
+}
+.address p:nth-of-type(2){
+	padding-bottom: 5px;
+}
+.address p:nth-of-type(3){
+	padding-bottom: 25px;
+}
+.address span{
+	display: inline-block;
+	padding-bottom: 18px;
+	font-size: 18px;
+	line-height:24px ;
+	color: #323232;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
+}
+.address span:nth-of-type(2){
+	padding-bottom: 3px;
+	
+}
+
+.address a{
+	display: inline-block;
+	width: 210px;
+	border: 1px solid #f26843;
+	border-radius:50px;
+	padding: 5px 17px 10px 32px;
+	margin-bottom: 30px;
+	background:#ed5a3d; 
+	box-shadow: 2px 0px 5px #a0200b; 
+
+	font-size: 18px;
+	line-height:24px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
+}
+/*------map end-----------------------------*/
 /*-----forms-catalog begin-------------------*/
 .forms-catalog p{
 	margin: 0px;
@@ -247,6 +693,19 @@ h2{
 	
 
 /*-----forms-catalog end--------------------*/
+
+/*-----sorting_all begin-------------------*/
+.view-hover{
+	display: none;
+}
+
+:hover .view-hover{
+	display: block;
+	background:#fff;
+}
+
+
+/*-----sorting_all end----------------------*/
 /*----paginator begin-------------------------------------*/
 .paginator{
 	width: 190px;
@@ -302,14 +761,27 @@ footer a{
 	width: 40px;
 	height: 40px;
 	margin-right: 10px;
-    vertical-align: middle;
+    vertical-align: top;
     display: inline-block;
-    background:red url("img/result.png");
+    background:url("../img/result.png");
 }
 .social-tw{
-	background-color: red;
+	background:url("../img/result.png");
+	background-position: 0px -320px;
 }
-.info{
+.social-it{
+	background:url("../img/result.png");
+	background-position: 0px -278px;
+}
+.social-fb{
+	background:url("../img/result.png");
+	background-position: 0px -236px;
+}
+.social-vk{
+	background:url("../img/result.png");
+	background-position: 0px -362px;
+}
+.info-footer{
 	float: left;
 	border: 1px solid red;
 	padding: 0px;
