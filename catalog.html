@@ -5,103 +5,110 @@
 	<title>Каталог</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" type="text/css">
 
 </head>
 <body>
+
 	<div class="site-wrapper-catalog">
 		<div class="content-wrapper">
 <!-- header begin -->
-			<header class="main-header clearfix">
-							<div class="logo">
-								<img src="img/Logo.png" alt="GllacyShop">
-							</div>
-							
-								
-							<ul class="main-menu">
+<header class="main-header clearfix">
+				<div class="logo">
+					<a href="index.html"><img src="img/Logo.png" alt="GllacyShop"></a>
+				</div>
+				
+					
+				<ul class="main-menu">
 
-									<li><a href="#">Каталог</a>
-										<ul class="sub-menu">
-											<li><a href="#"><b>Новинки</b></a></li>
-											<li><a href="#">Сливочное</a></li>
-											<li><a href="#">Щербеты</a></li>
-											<li><a href="#">Фруктовый лед</a></li>
-											<li><a href="#">Мелорин</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Доставка и оплата</a></li>
-									<li><a href="#">О Компании</a></li>
+						<li class="menu-mouse" ><a  href="#">Каталог</a>
+							<ul class="catalog-menu">
+								<li><a href="#"><b>Новинки</b></a></li>
+								<li><a href="catalog.html">Сливочное</a></li>
+								<li><a href="#">Щербеты</a></li>
+								<li><a href="#">Фруктовый лед</a></li>
+								<li><a href="#">Мелорин</a></li>
 							</ul>
-								
+						</li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">О Компании</a></li>
+				</ul>
+					
+				
+
+				<div class="header-right">
+					<ul class="block-right">
+							<li class="find"><a href="#"></a>
+								<div class="search-bg">
 							
+									<form action="" method="post">
+									<input  type="email" name="email" value="Что ищем?" required>
+								
+									</form>
+								</div>
+							</li>
 
-							<div class="header-right">
-								<ul class="block-right">
-										<li class="find"><a href="#"></a>
-									
-											<form action="#" method="get">
-			  								<input type="text" name="search" id="search" value="Что ищем?">
-											</form>
-										</li>
-
-										<li class="enter"><a href="#">Вход</a>
-									
+							<li class="enter"><a href="#">Вход</a>
+									<div class="enter-block">
 										<form action="#" method="get" id="enter">
-			  								<input type="email" name="email-address" id="address" value="Электронный адрес">
+	  											<input type="email" name="email-address" id="address" value="Электронный адрес">
 
-			  								<input type="password" name="password" id="password" value="Пароль">
+	  											<input type="password" name="password" id="password" value="Пароль">
 
-			  								<a href="#">Войти</a>
-			  								<ul>
-			  									<li><a href="#">Забыли пороль?</a></li>
-			  									<li><a href="#">Новая регистрация</a>
-			  										<form action="#" method="get">
-			  											<input type="text" name="name" id="name" value="Как вас зовут?">
-													</form>
-			  									</li>
-			  								</ul>
+	  											<a  class="btn btn-enter" href="#">Войти</a>
+	  									<ul class="clearfix">
+	  											<li><a href="#">Забыли пороль?</a></li>
+	  											<li><a href="#">Новая регистрация</a></li>
+	  									</ul>
 
-										</form>
-										</li>
-
-										<li class="cart"><a href="">Пусто</a>
-											<div class="cart-submenu">
-													<div>
-														<img src="http://placehold.it/150x100" alt="Пломбир с апельсиновым джемом">
-														<p>Пломбир с апельсиновым джемом</p>
-														<p>1,5кг.&#8381;200 руб.</p>
-														<p>300 руб.</p>
-													
-													</div>
-													<div>
-														<img src="http://placehold.it/150x100" alt="Клубничный пломбир с присыпкой из белого шоколада">
-														<p>Клубничный пломбир с присыпкой из белого шоколада</p>
-														<p>1,5кг. &#10006; 300 руб.</p>
-														<p>450 руб.</p>
-													
-													</div>>
-													<p>Итого:750 руб.</p>
-													<a href="#">Оформить заказ</a>
-											</div>
-										</li>
-								</ul>
+								</form>
+						</div>
 								
-							
+							</li>
 
-							<div class="time-phone">
-									<p class="time">c 10 до 20, ежедневно</p>
-									<span>8&nbsp;812&nbsp;450&ndash;25&ndash;25</span>
-							</div>
-						
-							</div>
-			</header>
+							<li class="cart products"><a  href="#">2 товара</a>
+								<div class="cart-submenu-hover">
+									<div class="cart-submenu-table">
+										<ul class="cart-row">
+											<li><p>&#10006;</p></li>
+											<li><img src="img/creamy-1.png" width="34px" height="34px" alt="Пломбир с апельсиновым джемом"></li>
+											<li><p>Пломбир с апельсиновым джемом</p></li>
+											<li><p>1,5 кг. &#10006; <span>200 руб.</span></p></li>
+											<li><p>300 руб.</p></li>
+										
+										</ul>
+										<ul class="cart-row">
+											<li><p>&#10006;</p></li>
+											<li><img src="img/creamy-3.png" width="34px" height="34px" alt="Клубничный пломбир с присыпкой из белого шоколада"></li>
+											<li><p>Клубничный пломбир с присыпкой<br>из белого шоколада</p></li>
+											<li><p>1,5 кг. &#10006; <span>300 руб.</span></p></li>
+											<li><p>450 руб.</p></li>
+										
+										</ul>
+									</div>
+										<p>Итого: 750 руб.</p>
+										<a class="btn btn-enter btn-right" href="#">Оформить заказ</a>
+									
+								</div>
+							</li>
+					</ul>
+					
+				
+
+				<div class="time-phone">
+						<p class="time">c 10 до 20, ежедневно</p>
+						<span>8&nbsp;812&nbsp;450&ndash;25&ndash;25</span>
+				</div>
+			
+				</div>
+</header>
 <!-- begin main -->
 <div class="main clearfix">
 	<div class="breadcrumbs">
             <a href="#">Главная<span>&raquo;</span></a>
             <a  href="#">Каталог<span>&raquo;</span></a>
-            <a   class="active" href="#">Сливочное</a>
+            <a  class="active" href="#">Сливочное</a>
     </div>
 
 	<h1>Сливочное мороженое</h1>
@@ -111,7 +118,7 @@
 	
 		<form class="main-form" action="" method="get">
 					<div class="sorting">
-						<p>Сортировка</p>
+						<p>Сортировка </p>
 						<div class="sorting-bg">
 							<select name="sorting" id="sorting">	
 								<option value="По популярности">По популярности</option>
@@ -139,17 +146,24 @@
 
 
 					<div class="main-fat">
+						
 							<p>Жирность:</p>
 							
 							 <div class="main-fat-bg"> 
-								<input type="radio" name="question-on" id="fat" value="0">
-								<label for="fat">0%</label>
-								<input type="radio" name="question-two" id="fat" value="10" checked>
-								<label for="fat">до 10%</label>
-								<input type="radio" name="question-three" id="fat" value="30">
-								<label for="fat">до 30%</label>
-								<input type="radio" name="question-three" id="fat" value="30">
-								<label for="fat">выше 30%</label>
+								<input type="radio" name="question-one" id="fat-one">
+								<label  for="fat-one">0%</label>
+								<input type="radio" name="question-two" id="fat-two" checked>
+								<label  for="fat-two">до 10%</label>
+								<input type="radio" name="question-three" id="fat-three">
+								<label  for="fat-three">до 30%</label>
+								<input  type="radio" name="question-four" id="fat-four">
+								 <label  for="fat-four">выше 30%</label>
+									
+									
+									
+									
+								
+								
 							</div>
 					</div>
 					
